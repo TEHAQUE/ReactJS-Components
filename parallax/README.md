@@ -1,0 +1,1 @@
+This component will work for uniform images divided into several planes. Specifically, it is created to evoke the impression of depth. Below is a picture showing an example division:
