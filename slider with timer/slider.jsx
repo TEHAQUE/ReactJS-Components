@@ -59,10 +59,9 @@ const Slider = () => {
             {sliderList.map((user, i) =>{
                return <InputComp 
                   key={sliderList[i].id}
-                    setSlideId={setSlideId}
-                      slideId={i}
-                        anim={isAnimating[i]}
-                          handleButtonClick={handleButtonClick}
+                     slideId={i}
+                       anim={isAnimating[i]}
+                         handleButtonClick={handleButtonClick}
                    />
                 })
               }
