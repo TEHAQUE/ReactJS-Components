@@ -5,3 +5,4 @@ each component includes a readme file with explanations and instructions to make
 
 ### Some components:
 * [Parallax depth](./parallax)
+* [Slider with timer](./slider%20with%20timer)
