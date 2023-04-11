@@ -4,5 +4,5 @@ Repository of components that I created in several projects and seemed interesti
 each component includes a readme file with explanations and instructions to make it easy to use.
 
 ### Some components:
-* [Parallax depth](./parallax)
-* [Slider with timer](./slider%20with%20timer)
+* [Parallax depth](https://github.com/TEHAQUE/ReactJS-Components/tree/main/parallax)
+* [Slider with timer](https://github.com/TEHAQUE/ReactJS-Components/tree/main/slider%20with%20timer)
