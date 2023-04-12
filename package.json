@@ -1,10 +1,10 @@
 {
   "name": "@tehaque/react.js-components",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Basic ReactJS components",
   "main": "index.js",
   "author": "tehaque",
-  "repository": "https://github.com/TEHAQUE/reactjs.git",
+  "repository": "https://github.com/TEHAQUE/ReactJS-Components.git",
   "scripts": {
     "start": "node index.js",
     "build": "babel src -d dist",
@@ -13,8 +13,13 @@
   "babel": {
     "presets": [
       "@babel/preset-env",
-     ["@babel/preset-react", {"runtime": "automatic"}]
-  ],
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ],
     "plugins": [
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-object-rest-spread"

@@ -15,6 +15,7 @@ Object.defineProperty(exports, "Slider", {
     return _slider["default"];
   }
 });
+var _react = _interopRequireDefault(require("react"));
 var _Parallax = _interopRequireDefault(require("./parallax/Parallax"));
 var _slider = _interopRequireDefault(require("./slider_with_timer/slider"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
