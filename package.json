@@ -1,6 +1,6 @@
 {
   "name": "@tehaque/react.js-components",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Basic ReactJS components",
   "main": "index.js",
   "author": "tehaque",
@@ -13,8 +13,8 @@
   "babel": {
     "presets": [
       "@babel/preset-env",
-      "@babel/preset-react"
-    ],
+     ["@babel/preset-react", {"runtime": "automatic"}]
+  ],
     "plugins": [
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-object-rest-spread"
