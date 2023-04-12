@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import BgLayer from './comp/bgLayer';
-import '.style.css';
+import './style.css';
 
 const Parallax = ({images}) => {
    return (
