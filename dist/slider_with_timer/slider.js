@@ -52,12 +52,12 @@ var Slider = function Slider(_ref) {
     });
   };
   return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-    children: ["// this is slider", /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "slider",
       style: {
         backgroundImage: "url(".concat(sliderList[slideId].img, ")")
       }
-    }), "// if you don't want buttons to change the slide, skip this component", /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "slider-menu",
       children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "slider-indic-bar",
