@@ -82,5 +82,7 @@ import {Slider} from '@tehaque/react.js-components';
 * It is required to style the elements, because the base style I created may not work in some projects. it all depends on where you will be using it and what your project requires.
 * If you change [slide display time](https://github.com/TEHAQUE/ReactJS-Components/blob/c7c571d8856b02401260069b4a693458ec47930e/slider%20with%20timer/slider.jsx#L37), don't forget to change the ***aniamtion-duration*** value in the [animate](https://github.com/TEHAQUE/ReactJS-Components/blob/c7c571d8856b02401260069b4a693458ec47930e/slider%20with%20timer/styl.css#L40) class to the time you want the slide to last.
 
+***
 
+## Source files are in the version branch
 
