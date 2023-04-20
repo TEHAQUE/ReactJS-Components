@@ -5,6 +5,8 @@
    "main": "index.js",
    "author": "tehaque",
    "repository": "https://github.com/TEHAQUE/ReactJS-Components.git",
+   "keywords": ["reactjs", "parallax", "slider", "tehaque"],
+   "license": "MIT",
    "scripts": {
      "start": "node index.js",
      "build": "babel src -d dist",
@@ -37,6 +39,9 @@
    "dependencies": {
      "react": "^18.2.0",
      "react-dom": "^18.2.0"
+   },
+   "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
    }
  }
  
