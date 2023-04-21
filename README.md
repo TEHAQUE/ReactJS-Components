@@ -5,7 +5,7 @@ Repository of components that I created in several projects and seemed interesti
 each component includes a readme file with explanations and instructions to make it easy to use. They are created in a simple way and accompanied by an extensive point-by-point manual.
 
 ## Installation
-```javascript
+```sh
 npm i @tehaque/react.js-components
 ```
 current stable version: v1.0.16
