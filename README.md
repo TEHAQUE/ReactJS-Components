@@ -66,11 +66,11 @@ import {Slider} from '@tehaque/react.js-components';
  const sliderList = [
     {
       id: 0,
-      img: 'your image source or link'
+      img: 'https://picsum.photos/1920/1080?random=1'
     },
     {
       id: 1,
-      img: 'your image source or link'
+      img: 'https://picsum.photos/1920/1080?random=2'
     }]
  ```
 * pass it to Component:
