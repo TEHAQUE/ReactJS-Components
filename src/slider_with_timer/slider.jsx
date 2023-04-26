@@ -2,33 +2,36 @@ import React,{useState, useEffect} from 'react';
 import InputComp from './comp/inputComp';
 import './styl.css';
 const Slider = ({sliderList}) => {
-  const [slideId,setSlideId] = useState(0);
-  const initialArray = [true, false, false, false, false];
-  const [isAnimating, setIsAnimating] = useState(initialArray);
-  
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setSlideId((slideId + 1) % initialArray.length); // the value is divided by the length of the array, after reaching the last index the function returned to the first argument
-        setIsAnimating(prevState =>
-          prevState.map((user, i) => i === slideId ? true : false)
-        );
-      }, 20000); // here you can change slide display time 20000 = 20s
-      return () => clearTimeout(timer);
-    }, [slideId]);
-     //function that change slide on click
-    const handleButtonClick = index => {
-      setSlideId(index);
-      setIsAnimating(prevState =>
-        prevState.map((user, i) => i === index ? true : false)
-      );
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [slideTimer, setSlideTimer] = useState(null);
+
+  const changeSlide = (index) => { //function that change slide on click
+    setSlideIndex(index);
+    clearInterval(slideTimer);
+    setSlideTimer(
+      setTimeout(() => {
+        setSlideIndex((slideIndex + 1) % sliderList.length); // the value is divided by the length of the array, after reaching the last index the function returned to the first argument
+      }, 20000) // here you can change slide display time 20000 = 20s
+    );
+  };
+
+  useEffect(() => {
+    setSlideTimer(
+      setTimeout(() => {
+        setSlideIndex((slideIndex + 1) % sliderList.length);
+      }, 20000) // here you can change slide display time 20000 = 20s
+    );
+    return () => {
+      clearInterval(slideTimer);
     };
-  
+  }, [slideIndex]);
+
   return (
     <>
     {/* this is slider */}
       <div 
         className="slider"
-          style={{backgroundImage: `url(${sliderList[slideId].img})`}}
+          style={{backgroundImage: `url(${sliderList[slideIndex].img})`}}
           >
       </div>
        {/* if you don't want buttons to change the slide, skip this component  */}
@@ -38,8 +41,8 @@ const Slider = ({sliderList}) => {
                return <InputComp 
                   key={sliderList[i].id}
                      slideId={i}
-                       anim={isAnimating[i]}
-                         handleButtonClick={handleButtonClick}
+                       anim={slideIndex === i ? true : false}
+                         handleButtonClick={changeSlide}
                    />
                 })
               }
