@@ -1,9 +1,10 @@
 import React,{useState, useEffect} from 'react';
 import InputComp from './comp/inputComp';
 import './styl.css';
-const Slider = ({sliderList}) => {
+const Slider = ({sliderList, animDuration = '15'}) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [slideTimer, setSlideTimer] = useState(null);
+  const timer = animDuration * 1000; //time is multiplied by a thousand so that the function executes in seconds
 
   const changeSlide = (index) => { //function that change slide on click
     setSlideIndex(index);
@@ -11,7 +12,7 @@ const Slider = ({sliderList}) => {
     setSlideTimer(
       setTimeout(() => {
         setSlideIndex((slideIndex + 1) % sliderList.length); // the value is divided by the length of the array, after reaching the last index the function returned to the first argument
-      }, 20000) // here you can change slide display time 20000 = 20s
+      }, timer) // here you can change slide display time 20000 = 20s
     );
   };
 
@@ -19,7 +20,7 @@ const Slider = ({sliderList}) => {
     setSlideTimer(
       setTimeout(() => {
         setSlideIndex((slideIndex + 1) % sliderList.length);
-      }, 20000) // here you can change slide display time 20000 = 20s
+      }, timer) // here you can change slide display time 20000 = 20s
     );
     return () => {
       clearInterval(slideTimer);
@@ -27,7 +28,7 @@ const Slider = ({sliderList}) => {
   }, [slideIndex]);
 
   return (
-    <>
+    <div className="slider-wrapper">
     {/* this is slider */}
       <div 
         className="slider"
@@ -43,12 +44,13 @@ const Slider = ({sliderList}) => {
                      slideId={i}
                        anim={slideIndex === i ? true : false}
                          handleButtonClick={changeSlide}
+                          animDuration={animDuration}
                    />
                 })
               }
             </div>
          </div>
-      </>
+      </div>
     );
   };
 export default Slider;
