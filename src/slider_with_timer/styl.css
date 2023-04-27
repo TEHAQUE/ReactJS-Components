@@ -46,7 +46,6 @@ float: left;
    background-color: #fbff00;
 }
 .animate{
-   animation-duration: 20s;
    animation-timing-function: ease-out;
    animation-delay: 0s;
    animation-iteration-count: 1;
