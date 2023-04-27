@@ -10,7 +10,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var InputComp = function InputComp(_ref) {
   var slideId = _ref.slideId,
     anim = _ref.anim,
-    handleButtonClick = _ref.handleButtonClick;
+    handleButtonClick = _ref.handleButtonClick,
+    animDuration = _ref.animDuration;
   var handleClick = function handleClick() {
     handleButtonClick(slideId);
   };
@@ -18,7 +19,10 @@ var InputComp = function InputComp(_ref) {
     className: "slider-indic",
     onClick: handleClick,
     children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
-      className: "slider-indic-el ".concat(anim ? "animate" : "")
+      className: "slider-indic-el ".concat(anim ? "animate" : ""),
+      style: {
+        animationDuration: animDuration + 's'
+      }
     })
   });
 };
