@@ -11,6 +11,8 @@
 [![Issues](https://img.shields.io/github/issues-raw/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/issues)
 [![Closed issues](https://img.shields.io/github/issues-closed-raw/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/issues?q=is%3Aissue+is%3Aclosed)
 
+## Description
+
 Repository of components that I created in several projects and seemed interesting to me. I encourage you to use and share your observations.
 each component includes a readme file with explanations and instructions to make it easy to use. They are created in a simple way and accompanied by an extensive point-by-point manual.
 
