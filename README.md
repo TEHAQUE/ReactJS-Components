@@ -1,33 +1,30 @@
-
-# ReactJS Components
-
-[![npm version](https://img.shields.io/npm/v/@tehaque/react.js-components.svg)](https://www.npmjs.com/package/@tehaque/react.js-components)
-[![npm downloads](https://img.shields.io/npm/dt/@tehaque/react.js-components.svg)](https://www.npmjs.com/package/@tehaque/react.js-components)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub contributors](https://img.shields.io/github/contributors/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/TEHAQUE/ReactJS-Components.svg?style=social&label=Star&maxAge=2592000)](https://github.com/TEHAQUE/ReactJS-Components/stargazers)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@tehaque/react.js-components.svg)](https://www.npmjs.com/package/@tehaque/react.js-components)
-[![Last commit](https://img.shields.io/github/last-commit/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/commits/master)
-[![Issues](https://img.shields.io/github/issues-raw/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/issues)
-[![Closed issues](https://img.shields.io/github/issues-closed-raw/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/issues?q=is%3Aissue+is%3Aclosed)
+# QuickBlockaUI by TwoHandStudio
 
 ## Description
 
-Repository of components that I created in several projects and seemed interesting to me. I encourage you to use and share your observations.
-each component includes a readme file with explanations and instructions to make it easy to use. They are created in a simple way and accompanied by an extensive point-by-point manual.
+This package contains a set of custom React components that can be used to build modern and responsive user interfaces. The package includes a range of UI elements, such as buttons, forms, alerts, modals, and more, that are easy to integrate into any React project. Each component is designed to be highly customizable and reusable, with extensive documentation and examples to help developers get started quickly. With this package, you can save time and effort in building UI components from scratch, and focus on creating the core features of your application.
+
+[![npm version](https://img.shields.io/npm/v/@twohandstudio/quickblocksui.svg)](https://www.npmjs.com/package/@twohandstudio/quickblocksui)
+[![npm downloads](https://img.shields.io/npm/dt/@twohandstudio/quickblocksui.svg)](https://www.npmjs.com/package/@twohandstudio/quickblocksui)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub contributors](https://img.shields.io/github/contributors/TwoHandStudio/QuickBlocksUI.svg)](https://github.com/TwoHandStudio/QuickBlocksUI/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/TwoHandStudio/QuickBlocksUI.svg?style=social&label=Star&maxAge=2592000)](https://github.com/TwoHandStudio/QuickBlocksUI/stargazers)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@twohandstudio/quickblocksui.svg)](https://www.npmjs.com/package/@twohandstudio/quickblocksui)
+[![Last commit](https://img.shields.io/github/last-commit/TwoHandStudio/QuickBlocksUI.svg)](https://github.com/TwoHandStudio/QuickBlocksUI/commits/master)
+[![Issues](https://img.shields.io/github/issues-raw/TwoHandStudio/QuickBlocksUI.svg)](https://github.com/TwoHandStudio/QuickBlocksUI/issues)
+[![Closed issues](https://img.shields.io/github/issues-closed-raw/TwoHandStudio/QuickBlocksUI.svg)](https://github.com/TwoHandStudio/QuickBlocksUI/issues?q=is%3Aissue+is%3Aclosed)
 
 ## Installation
 
 ```sh
-npm i @tehaque/react.js-components
+npm i @two-hand-studio/quickblocksui
 ```
-
 
 ## Contents
 
 - [Parallax](#parallax)
-- [Slider with depth](#slider-with-timer)
-- [Main manu](#main-menu)
+- [Default Slider](#default-slider)
+- [Slider](#slider)
 
 ---
 
@@ -40,7 +37,7 @@ This component will work for uniform images divided into several planes. Specifi
 - import like any Component:
 
 ```javascript
-import { Parallax } from "@tehaque/react.js-components";
+import { Parallax } from "@two-hand-studio/quickblocksui";
 ```
 
 - import images (or just pass it straight to table)
@@ -79,7 +76,7 @@ Below is a picture showing an example of a mountain landscape divided into 4 ele
 
 ![image](https://user-images.githubusercontent.com/82551359/228567429-f993ca49-9709-436e-b665-6ea5d559dd2b.png)
 
-# Slider with timer
+# Default Slider
 
 A simple slider that changes the photo every 20 seconds. Slider can be dynamically changed by the user to any slide by clicking on the button. You can add many photos, buttons to change will be created automatically.
 You can also add fields such as title or description to the [sliderList](https://github.com/TEHAQUE/ReactJS-Components/blob/c7c571d8856b02401260069b4a693458ec47930e/slider%20with%20timer/slider.jsx#L5) table and place them somewhere on the page, similarly to [photos in a slider](https://github.com/TEHAQUE/ReactJS-Components/blob/c7c571d8856b02401260069b4a693458ec47930e/slider%20with%20timer/slider.jsx#L53).
@@ -89,7 +86,7 @@ You can also add fields such as title or description to the [sliderList](https:/
 - import like any Component:
 
 ```javascript
-import { Slider } from "@tehaque/react.js-components";
+import { Slider } from "@two-hand-studio/quickblocksui";
 ```
 
 - create one variable or state (for example):
@@ -124,14 +121,12 @@ const sliderList = [
 - It is required to style the elements, because the base style I created may not work in some projects. it all depends on where you will be using it and what your project requires.
 - If you change [slide display time](https://github.com/TEHAQUE/ReactJS-Components/blob/c7c571d8856b02401260069b4a693458ec47930e/slider%20with%20timer/slider.jsx#L37), don't forget to change the **_aniamtion-duration_** value in the [animate](https://github.com/TEHAQUE/ReactJS-Components/blob/c7c571d8856b02401260069b4a693458ec47930e/slider%20with%20timer/styl.css#L40) class to the time you want the slide to last.
 
-# Main menu
+# Slider
 
-```javascript
-import { MainMenu } from "@tehaque/react.js-components";
-```
+### Description
 
-The MainMenu component is now available for use, but please note that some options are still missing. However, these options will be added in the near future to enhance the functionality of the component. To properly utilize the MainMenu component, you will also need to install the react-router-dom package. This package is essential in navigating to different pages of your application. Once you have installed react-router-dom, you can start using the MainMenu component with all its options and features. Stay tuned for further updates and enhancements to the component.
+Offers the same functionality as the [Default Slider](#default-slider) but with added compatibility and the ability to easily customize its styles. With smooth sliding and seamless value selection, this slider enhances the user experience while seamlessly integrating into any project.
 
----
+## All possible methods of customization and styling changes
 
-## Source files are in the version branch
+https://quickblocks.gatsbyjs.io/Examples/Slider/
