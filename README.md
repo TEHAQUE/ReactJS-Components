@@ -1,5 +1,6 @@
 # ReactJS Components
 
+
 [![npm version](https://img.shields.io/npm/v/@tehaque/react.js-components.svg)](https://www.npmjs.com/package/@tehaque/react.js-components)
 [![npm downloads](https://img.shields.io/npm/dt/@tehaque/react.js-components.svg)](https://www.npmjs.com/package/@tehaque/react.js-components)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -9,7 +10,8 @@
 [![Last commit](https://img.shields.io/github/last-commit/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/commits/master)
 [![Issues](https://img.shields.io/github/issues-raw/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/issues)
 [![Closed issues](https://img.shields.io/github/issues-closed-raw/TEHAQUE/ReactJS-Components.svg)](https://github.com/TEHAQUE/ReactJS-Components/issues?q=is%3Aissue+is%3Aclosed)
-
+## ⚠️ Notice ⚠️
+### This package is no more supported. Continued, in a more professional way: [QuickBlocksUI](https://github.com/TwoHandStudio/QuickBlocksUI)
 # Description
 
 Repository of components that I created in several projects and seemed interesting to me. I encourage you to use and share your observations.
